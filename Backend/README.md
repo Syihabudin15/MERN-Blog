@@ -1,9 +1,9 @@
 # BLOG API DOCUMENTATION
 
 ## Insert New Blog
-Url = `http://localhost:5000/api/blog`
-Method = `POST`
-Value =
+Url = `http://localhost:5000/api/blog`;
+Method = `POST`;
+Value =;
 ```json 
     {
         title: "This is For Title",
@@ -15,9 +15,9 @@ Value =
 ```
 
 ## Get All Blogs
-Url = `http://localhost:5000/api/blogs/`
-Method = `GET`
-Will return Array of Object
+Url = `http://localhost:5000/api/blogs/`;
+Method = `GET`;
+Will return Array of Object;
 ```json
 [
     {
@@ -32,9 +32,9 @@ Will return Array of Object
 ```
 
 ## Get Blog By Id
-Url = `http://localhost:5000/api/blog/{idBlog}`
-Method = `GET`
-Will Return an Object
+Url = `http://localhost:5000/api/blog/{idBlog}`;
+Method = `GET`;
+Will Return an Object;
 ```json
     {
         title: "This is Title",
@@ -47,10 +47,10 @@ Will Return an Object
 ```
 
 ## Update Blog
-Url = `http://localhost:5000/api/blog/{idBlog}`
-Method = `PATCH`
-You can fill in all data or only some
-For update Image im stil processing to develop
+Url = `http://localhost:5000/api/blog/{idBlog}`;
+Method = `PATCH`;
+You can fill in all data or only some;
+For update Image im stil processing to develop;
 For example:
 ```json
     {
@@ -82,9 +82,9 @@ And will Return an Object
 ```
 
 ## Remove Blog
-Url = `http://localhost:5000/api/blog/{idBlog}`
-Method = `DELETE`
-if Sucess, it wil Return
+Url = `http://localhost:5000/api/blog/{idBlog}`;
+Method = `DELETE`;
+if Sucess, it wil Return;
 ```json
     {
         message: "Succes Delete Blog",

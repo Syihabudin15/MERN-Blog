@@ -1,6 +1,8 @@
 import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
+import cors from "cors";
+
 import router from "./src/Controllers/Controller.js";
 import Config from "./Config/Config.js";
 const app = express();
@@ -10,6 +12,7 @@ mongoose.set('strictQuery', false);
 mongoose.connect(Config.CONNECTIONSTRING);
 
 // Use Middleware
+app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
 app.use("/api", router);
